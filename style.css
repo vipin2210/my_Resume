@@ -1,0 +1,330 @@
+body {
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 25px;
+}
+
+#body-header {
+  height: 65vh;
+  opacity: 0.8;
+  background-image: url("macbook_mouse.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 1.2rem;
+}
+
+/*horizontal list*/
+.horizontal-list {
+  list-style: none;
+  padding-left: 0px;
+  margin: 0px;
+}
+.horizontal-list li {
+  display: inline-block;
+  margin: 0px 8px 8px 0px;
+  font-size: 0.9rem;
+}
+.horizontal-list li a {
+  color: white;
+  text-decoration: none;
+}
+.nav-menu li a {
+  transition: color 0.5s, border-bottom 4s;
+}
+.nav-menu li a:hover {
+  color: rgb(85, 169, 247);
+  border-bottom: 2px solid white;
+}
+.text-center {
+  text-align: center;
+}
+#name-social-container {
+  margin-top: 20vh;
+}
+#my-name {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  color: white;
+  font-weight: 700;
+}
+.social-icons li a i {
+  color: rgb(201, 216, 218);
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+.social-icons li a i:hover {
+  box-shadow: 0px 0px 6px 4px rgb(230, 196, 196, 0.3);
+}
+
+section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section:nth-child(2n) {
+  background-color: #ececec;
+}
+section:nth-child(2n + 1) {
+  background-color: rgb(255, 255, 255);
+}
+
+/* About section */
+.about {
+  height: auto;
+  width: 100%;
+}
+#my-image {
+  height: 12rem;
+  width: 12rem;
+  margin: auto;
+  margin-top: -17vh;
+  position: relative;
+}
+#my-image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0px 0px 6px 4px rgb(230, 196, 196);
+}
+#my-image img:target{ 
+  width: 80vw;
+  height:80vh;
+}
+#about-info {
+  padding: 10px;
+  height: auto;
+  width: 70%;
+  text-align: justify;
+  color: grey;
+  line-height: 28px;
+  font-size: 1.1rem;
+  margin: auto;
+}
+
+.section-heading{
+  width: auto;
+  padding: 20px 10px 10px;
+  margin: 10px auto; 
+  font-weight: 400;
+}
+.section-heading span{
+  font-size: 40px;
+  display: inline-block;
+  color: rgb(52, 52, 160);
+  padding-top: 10px;
+  margin-right: 0.5rem;
+}
+
+/* skills section */
+.skills-display{
+  width: 70%;
+/* border:2px solid white;  */
+/* height: 100px; */
+   margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.skill-progress{
+  width: 7rem;
+  height: 1.4rem;
+  margin-top:30px;
+  display: inline-block;
+  background-color: lightgrey;
+  border-radius: 0.8rem;
+}
+.skill-progress>div{
+  border-radius: 0.8rem 0 0 0.8rem ;
+}
+.skill-name {
+  color: white;
+  font-size:1rem;
+  margin-left: 10px;
+}
+.mb75px {
+  margin-bottom: 75px;
+}
+
+.eighty-five-percent{
+  width: 85%;
+  height: inherit;
+}
+.mc-blue{
+  background-color: #2857a4;
+}
+.mc-orange{
+  background-color: orange;
+}
+.mc-yellow{
+  background-color: rgba(255, 255, 0, 0.849);
+}
+.mc-green{
+  background-color: lightgreen;
+}
+.mc-red{
+  background-color: rgba(255, 0, 0, 0.61);
+}
+
+/* Experience section */
+.experience-display{
+  width: 70%;
+  /* margin: auto; */
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: rgb(232, 232, 255);
+}
+.internship{
+  width:70%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.internship-logo{
+  /* width: 40%; */
+  margin: 30px 10px 30px 10px;
+  display: inline-block;
+  /* margin: auto;
+  border-radius: 0.8rem; */
+}
+.internship-logo img{
+  width: 40vw;
+  height: 10vh;
+  border-radius: 0.8rem;
+
+}
+.internship-name{
+  display: inline-block;
+  padding: 30px 10px 30px 10px;
+  /* margin: auto; */
+}
+
+/* Education */
+.timeline{ 
+  width: 75%;
+  position: relative;
+  /* margin: auto; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  background-color: rgb(196, 224, 218);
+
+}
+.timeline-box{  
+  width:40%;
+  height: 30vh;
+  position:relative;
+  margin: 5px;
+  left:5%;
+  margin-bottom: 30px;
+  min-height:150px;
+  background-color: rgb(232, 232, 255);
+
+}
+.timeline-box:nth-child(2n){
+  left: 56%;
+}
+.institute-logo{
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  
+}
+.institute-logo img{
+  width:100%;
+  height: 100%;
+}
+.institute-name{
+  width: 100%;
+  height: 20%;
+  text-align: center;
+  background-color: rgb(247, 247, 247);
+}
+.timeline-divider{
+  position:absolute;
+  width:0;
+  height:75%;
+  border-right:3px dashed skyblue;
+  left:50%;
+  top:10%;
+}
+.timeline-traveller{
+  position:sticky;
+  transform:rotate(90deg);
+  top:30%;
+  left:10%;
+  z-index:2;
+}
+.timeline-box:nth-child(2n+1)::before{
+  content:"";
+  position:absolute;
+  width:0.5rem;
+  height:0.5rem;
+  border-radius:50%;
+  top:30%;
+  right:-13%;
+  background-color:red;
+  z-index:1;
+}
+.timeline-box:nth-child(2n)::before{
+  content:"";
+  position:absolute;
+  width:0.5rem;
+  height:0.5rem;
+  border-radius:50%;
+  top:30%;
+  left:-18%;
+  background-color:red;
+  z-index:1;
+}
+#contact{
+  background-image:linear-gradient(to-right,blue,red);
+  background-color: lightblue;
+  color:white;
+}
+#contact h1 span{
+  color:white;  
+}
+.contact-detail{
+ width:75%;
+ display:flex;
+ justify-content: center;
+}
+.contact-form{
+width:40%
+}
+
+input{
+  padding:5px;
+  margin:10px 0 10px 0;
+  border-style: none;
+}
+
+.contact-address{
+ 
+  font-size: 1rem;
+  width: 40%;
+}
+.contact-social .social-icons li a i{
+  color: white;
+} 
+.contact-social .social-icons li a i:hover{
+  box-shadow: 0px 0px 6px 4px rgb(255, 255, 255);
+}
+/* button{
+  justify-content: center;
+} */
+@media only screen and (min-width:600px){
+.timelin-box{
+  width:70%
+}
+}
