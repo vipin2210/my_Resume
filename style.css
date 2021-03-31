@@ -280,7 +280,7 @@ section:nth-child(2n + 1) {
   position:absolute;
   width:0.5rem;
   height:0.5rem;
-  border-radius:50%;
+  border-radius: 50%;
   top:30%;
   left:-18%;
   background-color:red;
@@ -310,7 +310,6 @@ input{
 }
 
 .contact-address{
- 
   font-size: 1rem;
   width: 40%;
 }
@@ -323,8 +322,24 @@ input{
 /* button{
   justify-content: center;
 } */
-@media only screen and (min-width:600px){
-.timelin-box{
-  width:70%
+@media only screen and (max-width:600px){
+.timeline-box{
+  width:80%;
+  left:12% !important;
 }
+/* .timeline-box:nth-child(2n){
+  left:12%;
+} */
+.timeline-divider{
+  left:5%;
+}
+.timeline-box::before{
+  left:-11% !important;
+}
+/* .timeline-box:nth-child(2n)::before{
+left:-11%;
+}
+.timeline-box:nth-child(2n+1)::before{
+  left:-11%;
+  } */
 }
