@@ -159,8 +159,8 @@ section:nth-child(2n + 1) {
 .mc-orange{
   background-color: orange;
 }
-.mc-yellow{
-  background-color: rgba(255, 255, 0, 0.849);
+.mc-purple{
+  background-color: rgba(146, 23, 136, 0.849);
 }
 .mc-green{
   background-color: lightgreen;
