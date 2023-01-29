@@ -6,15 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vipin Resume</title>
-  <link rel="shortcut icon" type="image/x-icon" href="my_image.jpg">
+  <link rel="shortcut icon" type="image/x-icon" href="my_image.jpg" />
   <link rel="stylesheet" type="text/css" href="style.css" />
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -29,6 +27,11 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+
+    <div class="scroll-percent">
+      <p> 0</p>
+      <p>% Viewed</p>
+    </div>
 
     <div id="name-social-container">
       <div class="text-center">
@@ -45,10 +48,12 @@
               <a href="https://github.com/vipin2210" target="_blank"><i class="fab fa-github"></i></a>
             </li>
             <li>
-              <a  href="https://stackoverflow.com/users/15182516/vipin" target="_blank"><i class="fab fa-stack-overflow"></i></a>
+              <a href="https://stackoverflow.com/users/15182516/vipin" target="_blank"><i
+                  class="fab fa-stack-overflow"></i></a>
             </li>
             <li>
-              <a href="https://www.facebook.com/profile.php?id=100010388206720" target="_blank"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=100010388206720" target="_blank"><i
+                  class="fab fa-facebook"></i></a>
             </li>
           </ul>
         </nav>
@@ -59,12 +64,12 @@
   <main>
     <section id="about">
       <div id="my-image">
-        <img src="my_image.jpg" />
+        <img src="photos/my_image.jpg" />
       </div>
       <div id="about-info">
         <p>
           Hello my name is Vipin. I am in 3rd year and Computer Engineering
-          student in G.N.D.I.T.. I love coding and i want to be Software
+          student in M.A.I.T.. I love coding and i want to be Software
           Engineer at big MNC.
         </p>
       </div>
@@ -75,9 +80,9 @@
         <span>SKILLS</span>
       </h1>
 
-      <div class="skills-display">
+      <div id="skills-container" class="skills-display">
         <div class="skill-progress">
-          <div class="eighty-five-percent mc-blue">
+          <div class="eighty-five-percent mc-blue" data-bar-width="85">
             <div class="skill-name">
               <span> C </span>
             </div>
@@ -85,7 +90,7 @@
         </div>
 
         <div class="skill-progress">
-          <div class="eighty-five-percent mc-orange">
+          <div class="eighty-five-percent mc-orange" data-bar-width="80">
             <div class="skill-name">
               <span> C++ </span>
             </div>
@@ -93,7 +98,7 @@
         </div>
 
         <div class="skill-progress">
-          <div class="eighty-five-percent mc-red">
+          <div class="eighty-five-percent mc-red" data-bar-width="95">
             <div class="skill-name">
               <span> JAVA </span>
             </div>
@@ -101,7 +106,7 @@
         </div>
 
         <div class="skill-progress">
-          <div class="eighty-five-percent mc-green">
+          <div class="eighty-five-percent mc-green" data-bar-width="90">
             <div class="skill-name">
               <span> HTML </span>
             </div>
@@ -109,7 +114,7 @@
         </div>
 
         <div class="skill-progress">
-          <div class="eighty-five-percent mc-blue">
+          <div class="eighty-five-percent mc-blue" data-bar-width="80">
             <div class="skill-name">
               <span> CSS </span>
             </div>
@@ -117,15 +122,48 @@
         </div>
 
         <div class="skill-progress">
-          <div class="eighty-five-percent mc-purple">
+          <div class="eighty-five-percent mc-purple" data-bar-width="85">
             <div class="skill-name">
               <span> JavaScript </span>
             </div>
           </div>
         </div>
 
+        <div class="skill-progress">
+          <div class="eighty-five-percent mc-orange" data-bar-width="90">
+            <div class="skill-name">
+              <span> ReactJS </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-progress">
+          <div class="eighty-five-percent mc-orange" data-bar-width="90">
+            <div class="skill-name">
+              <span> Redux </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-progress">
+          <div class="eighty-five-percent mc-red" data-bar-width="90">
+            <div class="skill-name">
+              <span> NodeJs </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-progress">
+          <div class="eighty-five-percent mc-green" data-bar-width="90">
+            <div class="skill-name">
+              <span> Express </span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+
+
 
     <section id="experience">
       <h1 class="section-heading mb75px">
@@ -135,7 +173,7 @@
       <div class="experience-display animate__animated animate__bounce animate__repeat-3	3">
         <div class="internship ">
           <div class="internship-logo">
-            <img src="onetechway.png">
+            <img src="photos/onetechway.png">
           </div>
           <div class="internship-name">
             <span>Intern at OnetechWay.in</span>
@@ -153,7 +191,7 @@
       <div class="timeline">
         <div class="timeline-box">
           <div class="institute-logo">
-            <img src="ip.jpg" alt="">
+            <img src="photos/ip.jpg" alt="">
           </div>
           <div class="institute-name">
             <span>I.P. Modern School</span>
@@ -162,7 +200,7 @@
 
         <div class="timeline-box">
           <div class="institute-logo">
-            <img src="gnd.jpg" alt="">
+            <img src="photos/gnd.jpg" alt="">
           </div>
           <div class="institute-name">
             <span>G.N.D.I.T</span>
@@ -171,7 +209,7 @@
 
         <div class="timeline-box">
           <div class="institute-logo">
-            <img src="mait.png" alt="">
+            <img src="photos/mait.png" alt="">
           </div>
           <div class="institute-name">
             <span>M.A.I.T</span>
@@ -193,54 +231,57 @@
       </h1>
 
       <div class="contact-detail">
-      <div class="contact-form">
-        <form action="">
-          <input type="text" name="name" for="name" placeholder="Your Name">
-          <br>
-          <input type="email" name="name" for="name" placeholder="Your Email">
-          <br>
-          <input type="text" name="name" for="name" placeholder="Message">
-          <br>
-          <button>SEND MESSAGE</button>
-          <br>
-        </form>
+        <div class="contact-form">
+          <form action="">
+            <input type="text" name="name" for="name" placeholder="Your Name">
+            <br>
+            <input type="email" name="name" for="name" placeholder="Your Email">
+            <br>
+            <input type="text" name="name" for="name" placeholder="Message">
+            <br>
+            <button>SEND MESSAGE</button>
+            <br>
+          </form>
+        </div>
+        <div class="contact-address">
+          <h2>Get in touch</h2>
+          <p>
+            You can contact Me through my mail. You can contact me whenever you needed.
+          </p>
+          <h2>My Address</h2>
+          <span><i class="fas fa-map-marker-alt"></i> Delhi, India</span><br>
+          <span><i class="fas fa-phone-alt"></i> 0011223344</span><br>
+          <span><i class="far fa-envelope"></i> 2002vipin318@gmail.com</span><br>
+        </div>
       </div>
-      <div class="contact-address">
-        <h2>Get in touch</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima optio est esse dicta accusamus quaerat harum a in! Harum nihil ex natus temporibus similique consequatur consectetur cupiditate consequuntur, debitis neque.
-        </p>
-        <h2>My Address</h2>
-        <span><i class="fas fa-map-marker-alt"></i> Delhi, India</span><br>
-        <span><i class="fas fa-phone-alt"></i> 0011223344</span><br>
-        <span><i class="far fa-envelope"></i> 2002vipin318@gmail.com</span><br>
-      </div>
-    </div>
 
-    <div class="contact-social">
-      <nav>
-        <ul class="horizontal-list text-center social-icons">
-          <li>  
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-          </li>
-          <li>
-            <a href="https://github.com/vipin2210" target="_blank"><i class="fab fa-github"></i></a>
-          </li>
-          <li>
-            <a href="https://stackoverflow.com/users/15182516/vipin" target="_blank"><i class="fab fa-stack-overflow"></i></a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/profile.php?id=100010388206720" target="_blank"><i class="fab fa-facebook"></i></a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+      <div class="contact-social">
+        <nav>
+          <ul class="horizontal-list text-center social-icons">
+            <li>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a href="https://github.com/vipin2210" target="_blank"><i class="fab fa-github"></i></a>
+            </li>
+            <li>
+              <a href="https://stackoverflow.com/users/15182516/vipin" target="_blank"><i
+                  class="fab fa-stack-overflow"></i></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=100010388206720" target="_blank"><i
+                  class="fab fa-facebook"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </section>
   </main>
 
   <section>
 
   </section>
+  <script type="text/javascript" src="script.js"></script>
 
 </body>
 
